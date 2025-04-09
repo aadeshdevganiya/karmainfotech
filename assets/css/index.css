@@ -11,15 +11,16 @@
 }
 .container .services-section {
     margin-top: 120px;
-    display: flex
-;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
+    gap: 30px;
     flex-wrap: wrap;
     row-gap: 120px;
 }
 
 .container .services-section .card {
-    width: 30%;
+    /* width: 100%; */
     text-align: center;
     position: relative;
     cursor: pointer;
@@ -90,4 +91,23 @@
 
 .services-section .card:hover .icon {
     transform: rotate(360deg);
+}
+.why-we{
+    padding: 100px 0;
+}
+.why-we .common-heading p {
+    margin: 0 0 10px 0;
+    max-width: 100%;
+}
+.why-we .row .col-lg-6 {
+    padding: 0 25px;
+}
+.why-we .why-we-content h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+.why-we .common-heading{
+    margin-bottom: 40px;
 }
