@@ -245,6 +245,18 @@ section{
     padding: 0px 42px;
 }
 
+.common-heading h2{
+    font-size: 48px;
+    margin: 0 0 10px 0; 
+}
+
+.common-heading p{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    max-width: 70%;
+    margin: auto; 
+}
+
 /* common-btn */
 
 /* .common-btn a {
