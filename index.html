@@ -20,7 +20,7 @@
 
     <!-- header-section-start  -->
     <header class="main-header">
-        <div class="container wow animate__animated animate__fadeInDown">
+        <div class="container wow wow animate__animated animate__fadeInDown">
             <nav class="navbar navbar-expand-xl" aria-label="Main navigation">
 
                 <!-- Logo -->
@@ -295,7 +295,7 @@
             <div class="row align-items-center gy-lg-0 gy-4">
                 <div class="col-lg-6 wow animate__animated animate__fadeInLeft"><img src="assets/images/why-we.png" class="img-fluid w-100" alt="why-we"></div>
                 <div class="col-lg-6 wow animate__animated animate__fadeInRight"><span class="badge">Why Choose Us</span>
-                    <div class="common-heading animate__animated animate__fadeIn">
+                    <div class="common-heading wow animate__animated animate__fadeIn">
                         <h2>What Sets Us Apart</h2>
                         <div class="why-part">
                             <p>At Karma Infotech, we redefine excellence through a commitment to unparalleled
@@ -351,6 +351,17 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script>new WOW().init();</script>
+    <script>
+        window.addEventListener("scroll", function () {
+          const header = document.querySelector(".main-header");
+          if (window.scrollY > 10) {
+            header.classList.add("sticky-active");
+          } else {
+            header.classList.remove("sticky-active");
+          }
+        });
+      </script>
+      
 </body>
 
 </html>
