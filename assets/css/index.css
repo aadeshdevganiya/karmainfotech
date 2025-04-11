@@ -111,3 +111,51 @@
 .why-we .common-heading{
     margin-bottom: 40px;
 }
+
+.satisfied-clients-counter {
+    background: url(../images/map-final.png);
+    background-color: var(--blue);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.main-counter-card .card-text, .number-icon {
+    font-size: 45px;
+    line-height: normal;
+    font-family: 'Poppins-Bold';
+}
+.main-counter-card .plus-icon {
+    display: flex
+;
+    justify-content: center;
+    color: var(--white);
+}
+.main-counter {
+    display: flex;
+    gap: 25px;
+    color: var(--white);
+}
+.main-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.counter-title h3{
+    color: #fff;
+}
+.main-counter-card {
+    max-width: 225px;
+    text-align: center;
+}
+.main-text p{
+    font-size: 20px;
+}
+.counter-title h3 span{
+    color: var(--yellow);
+}
+.why-we-content img {
+    max-width: 100%;
+    padding: 10px;
+    background: var(--yellow);
+    border-radius: 10px;
+}
