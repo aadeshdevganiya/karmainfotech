@@ -114,8 +114,8 @@ section{
     position: sticky;
     top: 25px;
     padding: 0 30px;
-    backdrop-filter: blur(10px);
-    background-color: rgb(255 255 255 / 72%); /* Optional: semi-transparent background */
+    backdrop-filter: blur(0px);
+    background-color: rgb(255 255 255 / 94%);
 }
 
 
