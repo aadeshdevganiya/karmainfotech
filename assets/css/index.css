@@ -217,7 +217,7 @@
 
 
 .client-review {
-    background-color: #000;
+    background-color: var(--blue);
     color: #fff;
     padding: 100px 0;
 }
