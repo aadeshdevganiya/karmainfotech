@@ -53,25 +53,24 @@ h6 {
 
 @font-face {
     font-family: "Poppins-Regular";
-    src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
-        url("../fonts/Poppins-Regular.ttf") format("ttf");
+    src: url("../font/Poppins-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Poppins-SemiBold";
-    src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
-        url("../fonts/Poppins-SemiBold.ttf") format("ttf");
-    font-weight: normal;
+    src: url("../font/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    /* SemiBold weight */
     font-style: normal;
 }
 
 @font-face {
     font-family: "Poppins-Bold";
-    src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
-        url("../fonts/Poppins-Bold.ttf") format("ttf");
-    font-weight: normal;
+    src: url("../font/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+    /* Bold weight */
     font-style: normal;
 }
 
@@ -83,19 +82,25 @@ h6 {
     --gradiant: #dcedfa;
 }
 
-.text-secondary{
+.text-secondary {
     color: var(--yellow) !important;
 }
 
-.text-primary{
+.text-primary {
     color: var(--blue) !important;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins-Bold";
 }
-section{
-    padding: 0 0 100px 0;
+
+section {
+    padding: 100px 0;
 }
 
 /* header-start */
@@ -107,6 +112,7 @@ section{
     padding-bottom: 10px;
     padding: 0 0 20px 0;
 }
+
 .main-header.sticky-active {
     width: 80%;
     border-radius: 80px;
@@ -146,7 +152,7 @@ section{
 
 .navbar-expand-xl .navbar-nav .nav-link {
     color: var(--black);
-    font-size: 22px;
+    font-size: 16px;
     line-height: normal;
     padding: 5px 0px;
     position: relative;
@@ -196,9 +202,11 @@ section{
     flex-wrap: nowrap;
     padding: 10px 0;
 }
-.navbar .navbar-nav{
-     margin-right: 50px;
+
+.navbar .navbar-nav {
+    margin-right: 50px;
 }
+
 .offcanvas {
     display: none;
 }
@@ -249,16 +257,24 @@ section{
     padding: 0px 42px;
 }
 
-.common-heading h2{
-    font-size: 48px;
-    margin: 0 0 10px 0; 
+.sub-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.common-heading p{
+.common-heading h2 {
+    font-size: 48px;
+    margin: 0 0 10px 0;
+}
+
+.common-heading p {
     font-size: 20px;
     margin: 0 0 10px 0;
     max-width: 70%;
-    margin: auto; 
+    margin: auto;
 }
 
 /* common-btn */
@@ -350,7 +366,7 @@ section{
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
-    font-family: 'poppins-regular';
+    font-family: 'Poppins-regular';
     font-weight: 500;
     font-size: 18px;
     background: transparent;
