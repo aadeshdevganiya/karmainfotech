@@ -33,6 +33,7 @@ ul {
 body {
     overflow-x: hidden;
     font-family: "Poppins-Regular";
+    position: relative;
 }
 
 .h1,
@@ -242,9 +243,11 @@ section {
 }
 
 .offcanvas-body {
-    display: flex;
+    display: flex
+;
     flex-direction: column;
     gap: 20px;
+    background: #fff;
 }
 
 .responsivemenu img {
@@ -415,6 +418,7 @@ section {
     transition: all .3s;
 }
 
+
 .btn-12 span:nth-child(1) {
     box-shadow:
         -7px -7px 20px 0px #fff9,
@@ -457,6 +461,9 @@ section {
     transform: rotateX(-90deg);
 }
 
+.main-header.sticky-active ul li a{
+    font-size: 16px !important;
+}
 
 
 /* costom-container */
@@ -547,6 +554,34 @@ section {
     width: 24px;
     height: 24px;
 }
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #3498db; /* Replace with your actual primary color */
+    z-index: 99999999;
+}
+
+.cursor-dot-outline {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(52, 152, 219, 0.5); /* Replace with your primary-light color in rgba */
+    z-index: 9999999;
+}
+
 
 /* responsive */
 
