@@ -124,7 +124,7 @@
 }
 
 .satisfied-clients-counter {
-    background: url(../images/map-final.png);
+    /* background: url(../images/map-final.png); */
     background-color: var(--blue);
     background-position: center;
     background-size: cover;
@@ -240,15 +240,20 @@
 .swiper-rtl .swiper-button-next:after {
     display: none;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
+.testimonial .swiper-pagination {
+    padding-top: 30px;
+    bottom: -6px;
+}
+.swiper-pagination-bullet-active{
+    background: var(--yellow);
+}
+.swiper-button-next, .swiper-button-prev {
     position: static;
     border: 1px solid #fff;
     border-radius: 50%;
     padding: 15px;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     rotate: -30deg;
 }
 
@@ -259,8 +264,8 @@
     background-color: var(--yellow);
     border-radius: 50%;
     padding: 15px;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
 }
 
 .swiper-slide .row p {
@@ -346,8 +351,9 @@
 }
 
 .portfolio-card img {
-    height: 220px;
+    height: 400px;
     object-fit: cover;
+    object-position: 0% 0%;
 }
 
 
@@ -367,20 +373,21 @@
 }
 
 .container {
-    width: 95%;
-    max-width: 1140px;
+    width: 100%;
+    max-width: 1468px;
     margin: auto;
 }
 
 .grid-70-30 {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
 }
 .get_form_inner {
     display: block;
     padding: 50px 40px;
     background: #fff;
-    box-shadow: -4px -2px 20px -7px #cfd5df;
+    max-width: 600px;
+    /* margin: auto; */
 }
 
 input[type="text"],
@@ -394,11 +401,12 @@ input[type="tel"] {
     padding: 0 0 0 20px;
     width: 100%;
     outline: 0;
+    background-color: rgb(247 247 247);
 }
 
 .grid-50-50 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 
@@ -414,6 +422,7 @@ textarea {
     width: 100%;
     outline: 0;
     margin-bottom: 20px;
+    background-color: rgb(247 247 247);
 }
 
 .get_form_inner_text h3 {
@@ -520,3 +529,419 @@ ul {
 .get_say_info_sec>li a:hover {
     background-color: #f85508;
 }
+.map_info {
+    background-color: #072150;
+    text-align: center;
+    padding-left: 68px;
+    padding-right: 68px;
+}
+
+.map_info h3{
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+.map_info p{
+    text-align: center;
+}
+
+.map_img {
+    text-align: center;
+    margin: 40px 0;
+}
+.office_info a{
+    color: var(--yellow);
+}
+.map_info .office_info a {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    color: #F5F9FF;
+    transition: all 0.5s ease-in-out;
+    display: block;
+    margin-bottom: 8px;
+}
+.map_info .office_info p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.map_info .office_info h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.map_info .office_info a {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    color: #F5F9FF;
+    transition: all 0.5s ease-in-out;
+    display: block;
+    margin-bottom: 8px;
+}
+.map_info .office_info p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.map_info .office_info h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.map_info {
+    color: #fff;
+    margin: 0 auto;
+}
+.map_info .office_info {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fitness_overcome_main {
+    /* padding: 90px 0; */
+    position: relative;
+    z-index: 999;
+}
+.fitness_overcome_main .common-heading {
+     margin-bottom: 40px;
+}
+.fitness_overcome_grp {
+    margin-bottom: 70px;
+    display: grid
+;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1px;
+    background-color: #C8D3E2;
+}
+.fitness_overcome_box {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    min-height: 180px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, .02);
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: #f4b0062b; /* translucent blue */
+    transition: height 0.4s ease;
+    z-index: 2;
+}
+
+/* ✅ Hover trigger */
+.fitness_overcome_box:hover .overlay {
+    height: 100%;
+}
+
+.overcome_box {
+    padding: 22px 24px;
+    position: relative;
+    z-index: 2;
+}
+.overcome_box {
+    padding: 22px 24px;
+    position: relative;
+    z-index: 2;
+}
+.overcome_img {
+    margin-bottom: 20px;
+    display: block;
+}
+.fitness_overcome_box h4 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #192433;
+    font-family: "poppins-semibold";
+}
+.fitness_overcome_grp p {
+    color: #646F7E;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading {
+    text-align: center;
+    color: #454343;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.white-heading{
+    color: #ffffff;
+}
+.heading:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(img/heading-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white-heading:after {
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading span {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+.white-heading span {
+    color: #ffffff;
+}
+/*-----Testimonial-------*/
+
+.testimonial:after {
+    position: absolute;
+    top: -0 !important;
+    left: 0;
+    content: " ";
+    background: url(img/testimonial.bg-top.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+
+.testimonial {
+    min-height: 375px;
+    position: relative;
+    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+        background-size: cover;
+}
+#testimonial4 .carousel-inner:hover{
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#testimonial4 .carousel-inner:active{
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#testimonial4 .carousel-inner .item{
+  overflow: hidden;
+}
+
+.testimonial4_indicators .carousel-indicators{
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 0;
+  height: 20px;
+  bottom: 15px;
+  padding: 0 5px;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+.testimonial4_indicators .carousel-indicators li{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  text-indent: 0;
+  margin: 2px 3px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators .active{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  margin: 2px 3px;
+  background-color: #9dd3af;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
+  height: 3px;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
+  background: #eeeeee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.testimonial4_control_button .carousel-control{
+  top: 175px;
+  opacity: 1;
+  width: 40px;
+  bottom: auto;
+  height: 40px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 38px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  background: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
+  transition: all 0.6s cubic-bezier(0.3,1,0,1);
+}
+.testimonial4_control_button .carousel-control.left{
+  left: 7%;
+  top: 50%;
+  right: auto;
+}
+.testimonial4_control_button .carousel-control.right{
+  right: 7%;
+  top: 50%;
+  left: auto;
+}
+.testimonial4_control_button .carousel-control.left:hover,
+.testimonial4_control_button .carousel-control.right:hover{
+  color: #000;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.testimonial4_header{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+}
+.testimonial4_header h4{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    object-fit: cover;
+    object-position: top;
+}
+.testimonial4_slide p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 40px 0 20px 0;
+}
+.testimonial4_slide h4 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.testimonial .carousel {
+	padding-bottom:50px;
+}
+.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
+    width: 35px;
+    height: 35px;
+}
+/* ------testimonial  close-------*/
+
+
